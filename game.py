@@ -2,16 +2,16 @@ import pygame
 from random import shuffle
 
 pygame.init()
-pygame.display.set_caption('Игра на память')
-window_surface = pygame.display.set_mode((300, 300))
-background = pygame.Surface((300, 300))
+pygame.display.set_caption('Игра на проверку зрительной памяти')
+window_surface = pygame.display.set_mode((800, 600))
+background = pygame.Surface((800, 600))
 background.fill(pygame.Color('#FF00FF'))
 
 button_font = pygame.font.SysFont('Verdana', 15) # используем шрифт Verdana
 button_text_color = pygame.Color("black")
 button_color = pygame.Color("gray")
-button_rect = pygame.Rect(100, 115, 100, 50)
-button_text = button_font.render('Нажми!', True, button_text_color)
+button_rect = pygame.Rect(200, 250, 400, 100)
+button_text = button_font.render('Нажми чтобы начать игру!', True, button_text_color)
 
 while True:
     for event in pygame.event.get():
